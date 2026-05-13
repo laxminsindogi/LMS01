@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Outfit:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --color-f1-red: #E10600;
+  --color-f1-blue: #154284;
+  --color-f1-dark: #000000;
+  --color-f1-gray-dark: #111827;
+  --color-f1-gray: #1F2937;
+  --color-f1-gray-light: #374151;
+}
+
+body {
+  @apply bg-f1-dark text-white font-sans overflow-x-hidden;
+}
+
+.f1-border {
+  @apply border-t-4 border-f1-red;
+}
+
+.f1-slant {
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+
+.speed-line {
+  background: linear-gradient(90deg, transparent, #E10600, transparent);
+}
+
